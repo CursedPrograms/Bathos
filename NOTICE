@@ -1,0 +1,22 @@
+Bathos
+Copyright (c) 2026 Cursed Entertainment. MIT License (see LICENSE).
+
+Bathos uses and ships the following, under their own licences:
+
+Depth Anything V2 (Small), the depth model (downloaded on first use, not in this repository)
+  Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng, Hengshuang Zhao
+  https://github.com/DepthAnything/Depth-Anything-V2 - Apache License 2.0 (the Small model; Base/Large are not)
+  ONNX export: https://huggingface.co/onnx-community/depth-anything-v2-small
+
+MediaPipe Face Mesh (models/face_mesh.onnx, converted from face_landmark.tflite; src/face_mesh_tris.h, from its
+  tesselation) - Google LLC - https://github.com/google-ai-edge/mediapipe - Apache License 2.0
+
+YuNet face detector (models/face_yunet.onnx, face_detection_yunet_2023mar)
+  Shiqi Yu, Wei Wu et al. - https://github.com/opencv/opencv_zoo - MIT License
+
+ONNX Runtime - Microsoft - https://github.com/microsoft/onnxruntime - MIT License
+SDL2 - https://www.libsdl.org - zlib License
+Dear ImGui - Omar Cornut - https://github.com/ocornut/imgui - MIT License
+stb_image, stb_image_write - Sean Barrett - https://github.com/nothings/stb - MIT License / public domain
+
+The edge refine is the guided filter of Kaiming He, Jian Sun and Xiaoou Tang (ECCV 2010 / TPAMI 2013).
