@@ -3,7 +3,7 @@
 //   bathos-cli picture.jpg [more pictures...] [-o out.jpg|out.png] [--size 518] [--colour] [--far-bright]
 //              [--contrast 1.0] [--no-refine] [--quality 95]
 //
-// Or drop pictures onto bathos-cli.exe: each one gets <name>_depth.jpg beside it. LayerTack's Filter > Bathos runs it.
+// Or drop pictures onto bathos-cli.exe: each one gets <name>_depth.jpg beside it. Chimera's Filter > Bathos runs it.
 #include "depth.h"
 #include "save.h"
 #include "stb_image.h"
@@ -96,7 +96,7 @@ int wmain(int argc, wchar_t** argv) {
     for (int i = 1; i < argc; ++i) args.push_back(fs::path(argv[i]).u8string());
     const int rc = run(args);
     DWORD procs[2];
-    // only when it has a console of its own on screen (a drop on the exe): not when LayerTack runs it with its output piped
+    // only when it has a console of its own on screen (a drop on the exe): not when Chimera runs it with its output piped
     if (GetConsoleProcessList(procs, 2) == 1 && GetFileType(GetStdHandle(STD_OUTPUT_HANDLE)) == FILE_TYPE_CHAR) { std::printf("\nPress Enter to close."); (void)std::getchar(); }
     return rc;
 }

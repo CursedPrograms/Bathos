@@ -7,7 +7,7 @@
     ['Refined edges', 'A guided filter snaps the depth to the picture\'s own outlines: hair, branches and skylines without blocky steps.'],
     ['The window', 'Drop a picture and drag the wipe between it and its depth. Detail, colour ramp, far-is-bright and contrast, then save as JPEG or PNG.'],
     ['Batches', 'Drop a pile of pictures: each gets its depth map beside it. Or run bathos-cli on as many as you like.'],
-    ['In LayerTack', 'Filter > Bathos > Depth Map puts the depth of the picture, or a layer, in as a new layer, masked to the selection.']
+    ['In Chimera', 'Filter > Bathos > Depth Map puts the depth of the picture, or a layer, in as a new layer, masked to the selection.']
   ];
   const grid = document.getElementById('features');
   if (grid) {

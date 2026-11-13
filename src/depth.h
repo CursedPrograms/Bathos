@@ -1,6 +1,6 @@
 // Bathos - the depth core: Depth Anything V2 (Small) through ONNX Runtime's C API (onnxruntime.dll, loaded at run
 // time), then an edge refine that snaps the depth to the picture's own outlines. Shared by Bathos (the window),
-// bathos-cli (the command line, which LayerTack's Filter > Bathos runs) and anything else in Atelier.
+// bathos-cli (the command line, which Chimera's Filter > Bathos runs) and anything else in Atelier.
 #pragma once
 #include <cstdint>
 #include <functional>

@@ -1,6 +1,6 @@
 // Bathos - a picture in, its depth map out. Part of Atelier (Cursed Entertainment's creative suite).
 // The window: drop a picture, see its depth beside it (drag the wipe), tune it, save it. Drop several at once and
-// each gets <name>_depth.jpg beside it. SDL2 + OpenGL 3 + Dear ImGui, like LayerTack.
+// each gets <name>_depth.jpg beside it. SDL2 + OpenGL 3 + Dear ImGui, like Chimera.
 //
 //   Bathos [picture]
 //   Bathos --capture out.bmp [picture]     a screenshot from a hidden window, then quit

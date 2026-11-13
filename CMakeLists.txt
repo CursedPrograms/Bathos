@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 project(Bathos VERSION 1.0.0 LANGUAGES C CXX)
 # Bathos: a picture in, its depth map out. Part of Atelier.
 #   Bathos      the window (SDL2, OpenGL 3, Dear ImGui)
-#   bathos-cli  the command line (LayerTack's Filter > Bathos runs it)
+#   bathos-cli  the command line (Chimera's Filter > Bathos runs it)
 # Both use src/depth.cpp: Depth Anything V2 through ONNX Runtime's C API (onnxruntime.dll is loaded at run time).
 # stb, ONNX Runtime's header and Dear ImGui are fetched here (or taken from external/); SDL2 by build.bat / apt.
 #   Windows: build.bat    Linux: ./build.sh (libsdl2-dev)

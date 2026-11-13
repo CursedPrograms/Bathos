@@ -2,7 +2,7 @@
 setlocal
 cd /d "%~dp0"
 rem Installs Bathos for this user: %LOCALAPPDATA%\Programs\Bathos, with Start menu and Desktop shortcuts.
-rem LayerTack finds it there for Filter > Bathos. Run build.bat first (or unzip a release and run this beside it).
+rem Chimera finds it there for Filter > Bathos. Run build.bat first (or unzip a release and run this beside it).
 set "SRC=dist\Bathos"
 if exist "Bathos.exe" set "SRC=."
 if not exist "%SRC%\Bathos.exe" ( echo Build it first: build.bat & exit /b 1 )

@@ -48,14 +48,14 @@ Entertainment's creative suite. **[Website](https://cursedprograms.github.io/Bat
 - **The window:** drop a picture; drag the wipe between it and its depth; change the detail, the colour ramp, near or
   far bright, and contrast; save beside the picture or anywhere (JPEG, or lossless PNG).
 - **Batches:** drop several pictures at once, or pass them to `bathos-cli`: each gets `<name>_depth.jpg` beside it.
-- **A LayerTack plugin:** in [LayerTack](https://github.com/CursedPrograms/LayerTack), Filter > Bathos > Depth Map
+- **A Chimera plugin:** in [Chimera](https://github.com/CursedPrograms/Chimera), Filter > Bathos > Depth Map
   puts the depth of the picture (or a layer) in as a new layer, masked to the selection.
 
 ## Install
 
 Download **Bathos-win64.zip** from [Releases](https://github.com/CursedPrograms/Bathos/releases), unzip it and run
 `install.bat` beside it (or just run `Bathos.exe` where it is). The installer puts Bathos in
-`%LOCALAPPDATA%\Programs\Bathos` with Start menu and Desktop shortcuts; LayerTack finds it there.
+`%LOCALAPPDATA%\Programs\Bathos` with Start menu and Desktop shortcuts; Chimera finds it there.
 
 The depth model (~99 MB) is downloaded once, on first use, into `%APPDATA%\Atelier\models` (or `F:\AIModels\depth`
 when that folder exists). The face models are small and come with Bathos.
@@ -90,7 +90,7 @@ The code, in `src/`:
 - `depth.cpp`: the depth core: ONNX Runtime (loaded at run time), Depth Anything V2, the guided-filter edge refine
 - `face.cpp`: proper faces: YuNet, MediaPipe Face Mesh, the mesh as a height field, blended into the depth
 - `gui.cpp`: the window (SDL2, OpenGL 3, Dear ImGui)
-- `cli.cpp`: `bathos-cli`, which LayerTack's Filter > Bathos runs
+- `cli.cpp`: `bathos-cli`, which Chimera's Filter > Bathos runs
 
 ## Credits
 
