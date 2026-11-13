@@ -43,11 +43,11 @@
 
 namespace fs = std::filesystem;
 
-// ---------- colours: the Atelier look (Changeling greys, the Cursed pink; solid, no gradients, no shadows) ----------
+// ---------- colours: the Atelier look (Changeling greys, the Cursed blue #007bb7; solid, no gradients, no shadows) ----------
 static const ImU32 C_BG = IM_COL32(0x1a, 0x1a, 0x1a, 255), C_PANEL = IM_COL32(0x24, 0x24, 0x24, 255),
                    C_LINE = IM_COL32(0x3a, 0x3a, 0x3a, 255), C_TEXT = IM_COL32(0xe6, 0xe6, 0xe6, 255),
-                   C_DIM = IM_COL32(0x9a, 0x9a, 0x9a, 255), C_PINK = IM_COL32(0xe0, 0x40, 0x8a, 255),
-                   C_DEEP = IM_COL32(0xc2, 0x18, 0x6b, 255), C_WELL = IM_COL32(0x14, 0x14, 0x14, 255);
+                   C_DIM = IM_COL32(0x9a, 0x9a, 0x9a, 255), C_PINK = IM_COL32(0x00, 0x7b, 0xb7, 255),
+                   C_DEEP = IM_COL32(0x00, 0x51, 0x84, 255), C_WELL = IM_COL32(0x14, 0x14, 0x14, 255);
 static ImVec4 col4(ImU32 c) { return ImGui::ColorConvertU32ToFloat4(c); }
 
 static void applyStyle() {
@@ -456,8 +456,9 @@ static void frame() {
     menuBar();
     const ImGuiViewport* vp = ImGui::GetMainViewport();
     const float panelW = 280, top = ImGui::GetFrameHeight();
-    canvas(ImVec2(vp->Pos.x, vp->Pos.y + top), ImVec2(vp->Size.x - panelW, vp->Size.y - top));
-    panel(ImVec2(vp->Pos.x + vp->Size.x - panelW, vp->Pos.y + top), ImVec2(panelW, vp->Size.y - top));
+    // the controls on the left (as in Terminus and Firmament), the picture beside them
+    panel(ImVec2(vp->Pos.x, vp->Pos.y + top), ImVec2(panelW, vp->Size.y - top));
+    canvas(ImVec2(vp->Pos.x + panelW, vp->Pos.y + top), ImVec2(vp->Size.x - panelW, vp->Size.y - top));
     about();
 }
 
