@@ -51,6 +51,16 @@ Entertainment's creative suite. **[Website](https://cursedprograms.github.io/Bat
 - **A Chimera plugin:** in [Chimera](https://github.com/CursedPrograms/Chimera), Filter > Bathos > Depth Map
   puts the depth of the picture (or a layer) in as a new layer, masked to the selection.
 
+## Minimum requirements
+
+| | |
+| --- | --- |
+| **System** | Windows 10 or 11, 64-bit (Linux builds from source) |
+| **Processor** | any 64-bit processor (the depth runs on the CPU) |
+| **Memory** | 4 GB RAM |
+| **Graphics** | any graphics card with OpenGL 3.0; no GPU needed for the depth |
+| **Disk** | 100 MB |
+
 ## Install
 
 Download **Bathos-win64.zip** from [Releases](https://github.com/CursedPrograms/Bathos/releases), unzip it and run
