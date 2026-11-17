@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(Bathos VERSION 1.0.0 LANGUAGES C CXX)
+project(Bathos VERSION 1.1.0 LANGUAGES C CXX)
 # Bathos: a picture in, its depth map out. Part of Atelier.
 #   Bathos      the window (SDL2, OpenGL 3, Dear ImGui)
 #   bathos-cli  the command line (Chimera's Filter > Bathos runs it)
