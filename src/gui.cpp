@@ -456,7 +456,7 @@ static void frame() {
     menuBar();
     const ImGuiViewport* vp = ImGui::GetMainViewport();
     const float panelW = 280, top = ImGui::GetFrameHeight();
-    // the controls on the left (as in Terminus and Firmament), the picture beside them
+    // the controls on the left (as in Simulacrum and Firmament), the picture beside them
     panel(ImVec2(vp->Pos.x, vp->Pos.y + top), ImVec2(panelW, vp->Size.y - top));
     canvas(ImVec2(vp->Pos.x + panelW, vp->Pos.y + top), ImVec2(vp->Size.x - panelW, vp->Size.y - top));
     about();
